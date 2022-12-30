@@ -1,14 +1,26 @@
 import "./App.css";
 import Search from "./Search";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function App() {
   return (
     <div className="App">
-      <h1>Weather Search Engine</h1>
+      {/* FIX THIS  */}
+      {/* <FontAwesomeIcon icon="fa-solid fa-cloud-bolt" />*/}
 
-      <h3>Enter a city to know the current temperature</h3>
+      {/* NEEDS OF THE PROJECT  */}
+      {/* DONE: search location, current location  */}
+      {/* TODO: show city name, date and time  */}
+      {/* DONE: show weather description  */}
+      {/* DONE: show weather icon  */}
+      {/* DONE: show weather temperature  */}
+      {/* TODO: show weather precipitation  */}
+      {/* TODO: show weather wind  */}
+
+      <h1>Weather Forecast</h1>
 
       <Search />
+
       <a href="https://github.com/annaruizverdaguer/weather-react">
         Github repo link
       </a>
