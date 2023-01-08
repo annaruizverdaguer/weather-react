@@ -1,12 +1,9 @@
 import "./App.css";
 import Search from "./Search";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function App() {
   return (
     <div>
-      {/* FIX THIS  */}
-      {/* <FontAwesomeIcon icon="fa-solid fa-cloud-bolt" />*/}
       <div className="App">
         <h1 className="main-title">Weather Forecast</h1>
 
