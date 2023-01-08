@@ -1,0 +1,33 @@
+.weather-component {
+  padding: 30px 0px;
+  margin: 0px;
+  padding-top: 0px;
+}
+
+.weather-temperature {
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.weather-city {
+  font-size: 30px;
+  font-weight: 200;
+  margin: 0px;
+}
+
+.weather-description {
+  font-size: 18px;
+  font-weight: 200;
+  margin: 0px;
+}
+
+.weather-more-info {
+  font-weight: 200;
+  margin: 0px;
+}
+
+.weather-value {
+  color: #b46490;
+  font-weight: 500;
+}
