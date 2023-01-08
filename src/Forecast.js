@@ -12,7 +12,7 @@ export default function Forecast(props) {
 
   useEffect(() => {
     setLoaded(false);
-  }, [props.latitude]);
+  }, [props.city]);
 
   function handleResponse(response) {
     let forecastContainer = [];
@@ -50,7 +50,7 @@ export default function Forecast(props) {
     return (
       <div className="forecast-wrapper">
         <h4>Forecast for the following days:</h4>
-        <p>Loading forecast...</p>
+        <p>Loading forecast for {props.city}</p>
       </div>
     );
   }

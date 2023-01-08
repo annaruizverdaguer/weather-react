@@ -4,20 +4,24 @@ import Search from "./Search";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       {/* FIX THIS  */}
       {/* <FontAwesomeIcon icon="fa-solid fa-cloud-bolt" />*/}
+      <div className="App">
+        <h1 className="main-title">Weather Forecast</h1>
 
-      <h1 className="main-title">Weather Forecast</h1>
-
-      <Search />
-
-      <a
-        href="https://github.com/annaruizverdaguer/weather-react"
-        className="git-repo-source"
-      >
-        Github repo link
-      </a>
+        <Search />
+      </div>
+      <p className="footer">
+        Coded by Anna Ruiz Verdaguer. Check the{" "}
+        <a
+          href="https://github.com/annaruizverdaguer/weather-react"
+          className="git-repo-source"
+        >
+          source code
+        </a>
+        !
+      </p>
     </div>
   );
 }

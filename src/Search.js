@@ -26,19 +26,25 @@ export default function Search() {
 
   function getWeatherAndForecastFromCity(event) {
     event.preventDefault();
+    setInformation(null);
+    setComponents(null);
 
     if (city.length > 0) {
       getCoordinatesFromCity(city).then((response) => {
-        setComponents(
-          <div>
-            <Weather city={city} />
-            <Forecast
-              latitude={response.data[0].lat}
-              longitude={response.data[0].lon}
-              city={city}
-            />
-          </div>
-        );
+        if (response.data.length !== 0) {
+          setComponents(
+            <div>
+              <Weather city={city} />
+              <Forecast
+                latitude={response.data[0].lat}
+                longitude={response.data[0].lon}
+                city={city}
+              />
+            </div>
+          );
+        } else {
+          setInformation(<p>Please enter a correct city name.</p>);
+        }
       });
     } else {
       setInformation(<p>Please enter a city name.</p>);

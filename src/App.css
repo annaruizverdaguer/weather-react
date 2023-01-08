@@ -11,7 +11,7 @@
   font-family: "Montserrat", sans-serif;
   color: var(--darker-color);
   background-color: var(--main-color);
-  margin: 10px auto 50px auto;
+  margin: 10px auto 5px auto;
   padding: 20px;
   max-width: 700px;
   border-radius: 4px;
@@ -26,6 +26,20 @@
   font-weight: 800;
 }
 
+.footer {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: var(--darker-color);
+  font-size: 12px;
+  font-style: italic;
+  margin: 5px auto 50px auto;
+}
+
 .git-repo-source {
-  font-size: 15px;
+  color: var(--blue-color);
+  text-decoration: none;
+}
+
+.git-repo-source:hover {
+  text-decoration: underline;
 }
