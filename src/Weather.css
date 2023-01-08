@@ -1,18 +1,58 @@
+:root {
+  --main-color: #ece8dd;
+  --blue-color: #579bb1;
+  --lighter-color: #f8f4ea;
+  --brown-color: #e1d7c6;
+  --darker-color: #343434;
+}
+
 .weather-component {
   padding: 30px 0px;
   margin: 0px;
   padding-top: 0px;
 }
 
+.weather-info-container {
+  background-color: var(--brown-color);
+  display: flex;
+  padding: 20px;
+  margin: 0px 20px;
+  border-radius: 4px;
+  border: 2px solid var(--darker-color);
+  transition: 0.3s ease-in-out;
+}
+
+.weather-info-container:hover {
+  background-color: var(--blue-color);
+  color: var(--lighter-color);
+}
+
+.weather-info-container:hover .weather-value,
+.weather-info-container:hover .weather-temperature {
+  color: var(--brown-color);
+}
+
+.weather-col {
+  width: 50%;
+  text-align: center;
+}
+
+.weather-col-inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .weather-temperature {
   font-size: 50px;
   font-weight: 600;
   margin: 0px;
+  color: var(--blue-color);
 }
 
 .weather-city {
-  font-size: 30px;
-  font-weight: 200;
+  font-size: 40px;
+  font-weight: 700;
   margin: 0px;
 }
 
@@ -28,6 +68,6 @@
 }
 
 .weather-value {
-  color: #b46490;
+  color: var(--blue-color);
   font-weight: 500;
 }

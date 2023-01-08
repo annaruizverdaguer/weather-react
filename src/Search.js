@@ -8,7 +8,7 @@ import Forecast from "./Forecast.js";
 
 export default function Search() {
   const [city, setCity] = useState("");
-  const [weatherComponent, setWeatherComponent] = useState("");
+  const [components, setComponents] = useState("");
   const [information, setInformation] = useState("");
   const apiKey = "0ebc654fccbc00189d5408f3d6f15b08";
   const geoUrl = "https://api.openweathermap.org/geo/1.0/direct?";
@@ -29,7 +29,7 @@ export default function Search() {
 
     if (city.length > 0) {
       getCoordinatesFromCity(city).then((response) => {
-        setWeatherComponent(
+        setComponents(
           <div>
             <Weather city={city} />
             <Forecast
@@ -57,7 +57,7 @@ export default function Search() {
           let currentCity = response.data[0].name;
           setCity(currentCity);
 
-          setWeatherComponent(
+          setComponents(
             <div>
               <Weather city={currentCity} />
               <Forecast
@@ -114,7 +114,7 @@ export default function Search() {
         </button>
         <DateTime />
         <div>{information}</div>
-        <div>{weatherComponent}</div>
+        <div>{components}</div>
       </form>
     </div>
   );

@@ -1,5 +1,4 @@
 import React from "react";
-import "./DateTime.css";
 
 export default function DateTime() {
   let week = [

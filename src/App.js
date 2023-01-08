@@ -8,15 +8,6 @@ function App() {
       {/* FIX THIS  */}
       {/* <FontAwesomeIcon icon="fa-solid fa-cloud-bolt" />*/}
 
-      {/* NEEDS OF THE PROJECT  */}
-      {/* DONE: search location, current location  */}
-      {/* TODO: show city name, date and time  */}
-      {/* DONE: show weather description  */}
-      {/* DONE: show weather icon  */}
-      {/* DONE: show weather temperature  */}
-      {/* TODO: show weather precipitation  */}
-      {/* TODO: show weather wind  */}
-
       <h1 className="main-title">Weather Forecast</h1>
 
       <Search />

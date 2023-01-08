@@ -1,17 +1,27 @@
+:root {
+  --main-color: #ece8dd;
+  --blue-color: #579bb1;
+  --lighter-color: #f8f4ea;
+  --brown-color: #e1d7c6;
+  --darker-color: #343434;
+}
+
 .forecast-card {
   display: inline-block;
-  background-color: #2e4757;
-  margin: 0px 10px 20px 10px;
+  background-color: var(--brown-color);
+  margin: 0px 5px 20px 5px;
   padding: 20px;
-  max-width: 90px;
-  border: 2px solid #fff;
-  color: #fff;
-  transition: 0.2s ease-in-out;
+  max-width: 80px;
+  border: 2px solid var(--darker-color);
+  color: black;
+  transition: 0.3s ease-in-out;
   font-size: 18px;
+  border-radius: 4px;
 }
 
 .forecast-card:hover {
-  background-color: #3a5667;
+  background-color: var(--blue-color);
+  color: var(--lighter-color);
 }
 
 .forecast-day {

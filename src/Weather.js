@@ -51,15 +51,21 @@ export default function Weather(props) {
     return (
       <div className="weather-component">
         <h4>Current weather:</h4>
-        <img src={weatherData.icon} alt="Current Weather Icon" />
-        <p className="weather-temperature">{weatherData.temperature}°C</p>
-        <h3 className="weather-city">{capitalizeCity(props.city)}</h3>
-        <p className="weather-description">{weatherData.description}</p>
-        <p className="weather-more-info">
-          Humidity:{" "}
-          <span className="weather-value">{weatherData.humidity}%</span>, Wind:{" "}
-          <span className="weather-value">{weatherData.wind}m/s</span>
-        </p>
+        <div className="weather-info-container">
+          <div className="weather-col">
+            <h3 className="weather-city">{capitalizeCity(props.city)}</h3>
+            <p className="weather-description">{weatherData.description}</p>
+            <p className="weather-more-info">
+              Humidity:{" "}
+              <span className="weather-value">{weatherData.humidity}%</span>,
+              Wind: <span className="weather-value">{weatherData.wind}m/s</span>
+            </p>
+          </div>
+          <div className="weather-col weather-col-inline">
+            <img src={weatherData.icon} alt="Current Weather Icon" />
+            <p className="weather-temperature">{weatherData.temperature}°C</p>
+          </div>
+        </div>
       </div>
     );
   } else {
